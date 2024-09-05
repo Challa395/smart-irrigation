@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Irrigation System for Precision Farming</h1>
+    
+    <form id="irrigationForm">
+        <!-- Input Fields -->
+        <label for="cropType">Crop Type:</label>
+        <select id="cropType" name="cropType" required>
+            <option value="wheat">Wheat</option>
+            <option value="corn">Corn</option>
+            <option value="rice">Rice</option>
+            <option value="soybean">Soybean</option>
+            <option value="cotton">Cotton</option>
+            <option value="potato">Potato</option>
+            <option value="sugarcane">Sugarcane</option>
+            <option value="tomato">Tomato</option>
+            <option value="onion">Onion</option>
+            <option value="carrot">Carrot</option>
+        </select><br><br>
+
+        <label for="soilMoisture">Soil Moisture Level (%):</label>
+        <input type="number" id="soilMoisture" name="soilMoisture" required><br><br>
+
+        <label for="fieldSize">Field Size (acres):</label>
+        <input type="number" id="fieldSize" name="fieldSize" required><br><br>
+
+        <label for="cropWaterRequirement">Crop Water Requirement (mm/day):</label>
+        <input type="number" id="cropWaterRequirement" name="cropWaterRequirement" required><br><br>
+
+        <label for="soilType">Soil Type:</label>
+        <select id="soilType" name="soilType" required>
+            <option value="sandy">Sandy</option>
+            <option value="clay">Clay</option>
+            <option value="loamy">Loamy</option>
+            <option value="silt">Silt</option>
+            <option value="peat">Peat</option>
+        </select><br><br>
+
+        <label for="irrigationEfficiency">Irrigation Efficiency (%):</label>
+        <input type="number" id="irrigationEfficiency" name="irrigationEfficiency" required><br><br>
+
+        <!-- Submit Button -->
+        <button type="button" onclick="calculateIrrigation()">Calculate Irrigation</button>
+    </form>
+
+    <!-- Output Fields -->
+    <h2>Results</h2>
+    <div id="results">
+        <p><b>Is Irrigation Needed?</b>: <span id="irrigationNeeded"></span></p>
+        <p><b>Water Deficit (mm):</b> <span id="waterDeficit"></span></p>
+        <p><b>Total Water Needed (mm):</b> <span id="totalWaterNeeded"></span></p>
+        <p><b>Effective Water Requirement (mm):</b> <span id="effectiveWaterRequirement"></span></p>
+        <p><b>Total Volume Needed (m³):</b> <span id="totalVolume"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
