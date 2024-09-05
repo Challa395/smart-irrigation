@@ -1,7 +1,8 @@
 /* General Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Gradient background */
+    background: url('agritech-background.jpg') no-repeat center center fixed; /* Agritech background */
+    background-size: cover;  /* Ensures the background image covers the entire page */
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,52 +12,52 @@ body {
 }
 
 .container {
-    width: 100px;  /* Extremely reduced width */
-    background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent white */
-    padding: 5px;  /* Minimal padding */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  /* Lighter shadow */
-    border-radius: 3px;  /* Smaller border-radius */
+    width: 250px;  /* Set container width larger for better visibility */
+    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white to show the background image */
+    padding: 10px;  /* Padding increased for clarity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Slightly larger shadow */
+    border-radius: 8px;  /* Larger border-radius for smooth edges */
 }
 
 header h1 {
     color: #2c3e50;
     text-align: center;
-    font-size: 0.9em;  /* Very small font size */
-    margin-bottom: 5px;  /* Reduced margin */
+    font-size: 1em;  /* Small font size */
+    margin-bottom: 10px;
 }
 
 /* Form Section Styling */
 .form-section {
-    background-color: rgba(236, 240, 241, 0.8);  /* Semi-transparent form background */
-    padding: 5px;  /* Minimal padding */
-    border-radius: 3px;  /* Smaller border-radius */
+    background-color: rgba(236, 240, 241, 0.9);  /* Semi-transparent form background */
+    padding: 10px;  /* Increased padding */
+    border-radius: 5px;
 }
 
 label {
     font-weight: 500;
-    margin-bottom: 4px;  /* Reduced margin */
+    margin-bottom: 6px;
     display: block;
     color: #34495e;
-    font-size: 0.6em;  /* Very small font size */
+    font-size: 0.7em;
 }
 
 input, select {
-    width: 100%;  /* Keep full width */
-    padding: 3px;  /* Minimal padding */
-    margin-bottom: 5px;  /* Reduced margin */
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
     border: 1px solid #bdc3c7;
-    border-radius: 2px;  /* Smaller border-radius */
-    font-size: 0.6em;  /* Very small font size */
+    border-radius: 3px;
+    font-size: 0.7em;
 }
 
 button {
-    width: 100%;  /* Full-width button */
-    padding: 4px;  /* Minimal padding */
+    width: 100%;
+    padding: 8px;
     background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 2px;
-    font-size: 0.7em;  /* Very small font size */
+    border-radius: 3px;
+    font-size: 0.8em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -67,25 +68,25 @@ button:hover {
 
 /* Result Section Styling */
 .result-section {
-    margin-top: 10px;  /* Minimal margin */
-    background-color: #ffffff;  /* White background for the result */
-    padding: 8px;  /* Padding around the result */
-    border-radius: 5px;  /* Slightly rounded corners */
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);  /* Light shadow */
+    margin-top: 15px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .result-section h2 {
     color: #27ae60;
-    font-size: 0.8em;  /* Very small font size */
+    font-size: 0.9em;
     text-align: center;
-    margin-bottom: 5px;  /* Reduced margin */
+    margin-bottom: 8px;
 }
 
 #results p {
-    font-size: 0.6em;  /* Very small font size */
+    font-size: 0.8em;
     color: #2c3e50;
-    padding: 3px;  /* Minimal padding */
-    background-color: #ecf0f1;  /* Light background for result text */
-    border-radius: 2px;  /* Smaller border-radius */
-    margin-bottom: 3px;  /* Reduced margin */
+    padding: 6px;
+    background-color: #ecf0f1;
+    border-radius: 3px;
+    margin-bottom: 5px;
 }
